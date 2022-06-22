@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Truth News</string>
+    <string name="title_for_you">Für Dich</string>
+    <string name="title_headlines">Schlagzeilen</string>
+    <string name="title_bookmarks">Lesezeichen</string>
+
+    <string name="title1">Die TOP 10 gefährlichsten Tiere Deutschlands! So bleiben sie sicher…</string>
+    <string name="title2">Wird künstliche Intelligenz uns bald alle ersetzen?!? Das sagen Wissenschaftler…</string>
+    <string name="title3">Die Hochhauspflicht - das Ende von Einfamilienhäusern? Lies alles dazu…</string>
+    <string name="title4">Ist Leonardo Di Caprio der neue Spiderman? Hollywood spielt verrückt</string>
+    <string name="title5">Kommt bald Cast Away Teil 2? Tom Hanks leaked die Infos!</string>
+    <string name="title6">Abnehmen ohne Diät oder Sport? Ärzte hassen diesen Trick…</string>
+
+    <string name="location1">Deutschland</string>
+    <string name="location2">Welt</string>
+    <string name="location3">USA</string>
+
+    <string name="date">23.06.2022</string>
+</resources>
