@@ -11,12 +11,21 @@ import de.syntax_institut.liveappbottomnavigation.adapter.NewsAdapter
 import de.syntax_institut.liveappbottomnavigation.databinding.FragmentForyouBinding
 import de.syntax_institut.liveappbottomnavigation.ui.MainViewModel
 
+/**
+ * Dieses Fragment verwaltet die Anzeige der Für Dich Seite
+ */
 class ForYouFragment : Fragment() {
 
+    // Hier wird das ViewModel geholt
     private val viewModel: MainViewModel by activityViewModels()
 
+    // hier wird die binding Variable deklariert
     private lateinit var binding: FragmentForyouBinding
 
+    /**
+     * Lifecycle Funktion onCreateView
+     * Hier wird das binding initialisiert und das Layout gebaut
+     */
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -27,9 +36,15 @@ class ForYouFragment : Fragment() {
         return binding.root
     }
 
+    /**
+     * Lifecycle Funktion onViewCreated
+     * Hier werden die Elemente eingerichtet und z.B. onClickListener gesetzt
+     */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Die Artikelliste aus dem VieModel wird beobachtet und bei einer Änderung wird ein neuer
+        // Adapter erzeugt
         viewModel.newsArticles.observe(
             viewLifecycleOwner
         ) {
